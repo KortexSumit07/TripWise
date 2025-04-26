@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <title>TripWise - The Ultimate Trip Planning</title>
+  <meta name="description" content="TripWise - Your ultimate companion for seamless travel planning, weather updates, and hotel bookings">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="components/header.css" />
+  <link rel="stylesheet" href="components/hero.css" />
+  <link rel="stylesheet" href="components/features.css" />
+  <link rel="stylesheet" href="components/planner.css" />
+  <link rel="stylesheet" href="components/weather.css" />
+  <link rel="stylesheet" href="components/hotels.css" />
+  <link rel="stylesheet" href="components/footer.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="TripWise Logo" class="logo-icon" />
+          <h1>TripWise</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#features" class="active">Features</a></li>
+            <li><a href="#planner">Trip Planner</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons">
+          <button class="btn btn-secondary">Sign In</button>
+          <button class="btn btn-primary">Get Started</button>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 2V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 20V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.93 4.93L6.34 6.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.66 17.66L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.34 17.66L4.93 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19.07 4.93L17.66 6.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>The Ultimate Trip Planning Experience</h1>
+          <p>Your all-in-one travel companion with route optimization, real-time weather updates, and hotel recommendations.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary btn-large">Start Planning</button>
+            <button class="btn btn-outline btn-large">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Travel Planning" />
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Why Choose TripWise</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L19 8.5L12 15L5 8.5L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 15L12 21.5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Unified Platform</h3>
+            <p>Combines navigation, weather, and accommodations in one seamless app.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Optimized Routes</h3>
+            <p>Efficient single and multi-stop trip planning with real-time navigation.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.93 4.93L7.76 7.76" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.24 16.24L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.93 19.07L7.76 16.24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.24 7.76L19.07 4.93" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Weather Insights</h3>
+            <p>Live updates and alerts for weather conditions that may impact travel.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Hotel Recommendations</h3>
+            <p>Curated listings with pricing, availability and user reviews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planner" class="planner">
+      <div class="container">
+        <h2 class="section-title">Plan Your Trip</h2>
+        <div class="planner-content">
+          <div class="planner-form">
+            <div class="form-group">
+              <label for="origin">Origin</label>
+              <input type="text" id="origin" placeholder="Enter starting point" />
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input type="text" id="destination" placeholder="Enter destination" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" />
+              </div>
+              <div class="form-group">
+                <label for="travelers">Travelers</label>
+                <select id="travelers">
+                  <option value="1">1 Person</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4+ People</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="stops">Stops (Optional)</label>
+              <input type="text" id="stops" placeholder="Add stop" />
+              <button class="btn btn-small btn-secondary add-stop">+ Add Another Stop</button>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary">Find Routes</button>
+              <button class="btn btn-outline">Save Trip</button>
+            </div>
+          </div>
+          <div class="map-preview">
+            <div class="map-placeholder">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6V22L8 18L16 22L23 18V2L16 6L8 2L1 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 2V18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 6V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p>Your route will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="weather" class="weather">
+      <div class="container">
+        <h2 class="section-title">Weather Forecast</h2>
+        <div class="weather-cards">
+          <div class="weather-card today">
+            <h3>Today</h3>
+            <div class="weather-icon sunny"></div>
+            <div class="temperature">24°C</div>
+            <div class="weather-details">
+              <div class="weather-detail">
+                <span class="label">Humidity</span>
+                <span class="value">65%</span>
+              </div>
+              <div class="weather-detail">
+                <span class="label">Wind</span>
+                <span class="value">8 km/h</span>
+              </div>
+              <div class="weather-detail">
+                <span class="label">Precipitation</span>
+                <span class="value">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="weather-card">
+            <h3>Tomorrow</h3>
+            <div class="weather-icon partly-cloudy"></div>
+            <div class="temperature">22°C</div>
+          </div>
+          <div class="weather-card">
+            <h3>Wednesday</h3>
+            <div class="weather-icon rainy"></div>
+            <div class="temperature">19°C</div>
+          </div>
+          <div class="weather-card">
+            <h3>Thursday</h3>
+            <div class="weather-icon cloudy"></div>
+            <div class="temperature">20°C</div>
+          </div>
+          <div class="weather-card">
+            <h3>Friday</h3>
+            <div class="weather-icon sunny"></div>
+            <div class="temperature">25°C</div>
+          </div>
+        </div>
+        <div class="weather-alert">
+          <div class="alert-icon"></div>
+          <div class="alert-content">
+            <h4>Weather Alert</h4>
+            <p>Light rain expected on Wednesday. Consider adjusting your travel plans.</p>
+          </div>
+          <button class="alert-close" aria-label="Close alert">×</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="hotels" class="hotels">
+      <div class="container">
+        <h2 class="section-title">Recommended Hotels</h2>
+        <div class="hotels-filter">
+          <div class="filter-group">
+            <label for="price-range">Price Range</label>
+            <select id="price-range">
+              <option value="all">All Prices</option>
+              <option value="budget">Budget</option>
+              <option value="mid">Mid-range</option>
+              <option value="luxury">Luxury</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="rating">Rating</label>
+            <select id="rating">
+              <option value="all">All Ratings</option>
+              <option value="5">5+ Stars</option>
+              <option value="4">4+ Stars</option>
+              <option value="3">3+ Stars</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="amenities">Amenities</label>
+            <select id="amenities">
+              <option value="all">All Amenities</option>
+              <option value="wifi">Free WiFi</option>
+              <option value="pool">Pool</option>
+              <option value="breakfast">Free Breakfast</option>
+            </select>
+          </div>
+        </div>
+        <div class="hotels-grid">
+          <div class="hotel-card">
+            <div class="hotel-image">
+              <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Grand Hotel" />
+              <div class="hotel-rating">4.8</div>
+            </div>
+            <div class="hotel-details">
+              <h3>Grand Hotel</h3>
+              <p class="hotel-location">Downtown, 0.5 miles from destination</p>
+              <div class="hotel-amenities">
+                <span>Free WiFi</span>
+                <span>Pool</span>
+                <span>Spa</span>
+              </div>
+              <div class="hotel-price">
+                <span class="price">$189</span>
+                <span class="per-night">per night</span>
+              </div>
+              <button class="btn btn-primary hotel-btn">View Details</button>
+            </div>
+          </div>
+          <div class="hotel-card">
+            <div class="hotel-image">
+              <img src="https://images.pexels.com/photos/1838554/pexels-photo-1838554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Seaside Resort" />
+              <div class="hotel-rating">4.6</div>
+            </div>
+            <div class="hotel-details">
+              <h3>Seaside Resort</h3>
+              <p class="hotel-location">Beachfront, 2 miles from destination</p>
+              <div class="hotel-amenities">
+                <span>Free WiFi</span>
+                <span>Beach Access</span>
+                <span>Breakfast</span>
+              </div>
+              <div class="hotel-price">
+                <span class="price">$239</span>
+                <span class="per-night">per night</span>
+              </div>
+              <button class="btn btn-primary hotel-btn">View Details</button>
+            </div>
+          </div>
+          <div class="hotel-card">
+            <div class="hotel-image">
+              <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Urban Loft" />
+              <div class="hotel-rating">4.3</div>
+            </div>
+            <div class="hotel-details">
+              <h3>Urban Loft</h3>
+              <p class="hotel-location">City Center, 0.3 miles from destination</p>
+              <div class="hotel-amenities">
+                <span>Free WiFi</span>
+                <span>Gym</span>
+                <span>Restaurant</span>
+              </div>
+              <div class="hotel-price">
+                <span class="price">$159</span>
+                <span class="per-night">per night</span>
+              </div>
+              <button class="btn btn-primary hotel-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-outline btn-load-more">Load More Hotels</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <div class="logo">
+              <img src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="TripWise Logo" class="logo-icon" />
+              <h2>TripWise</h2>
+            </div>
+            <p>The ultimate travel companion for seamless, hassle-free trip planning.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C19.2577 3.83751 18.4573 3.34669 17.567 3.12393C16.6767 2.90116 15.7395 2.9572 14.8821 3.28445C14.0247 3.61171 13.2884 4.1944 12.773 4.95372C12.2575 5.71303 11.9877 6.61234 12 7.53V8.53C10.2426 8.57557 8.50127 8.18581 6.93101 7.39545C5.36074 6.60508 4.01032 5.43864 3 4C3 4 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.5C20.9991 7.22145 20.9723 6.94359 20.92 6.67C21.9406 5.66349 22.6608 4.39271 23 3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4078 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61992 14.1902 8.22773 13.4229 8.09407 12.5922C7.9604 11.7615 8.09207 10.9099 8.47033 10.1584C8.84859 9.40685 9.45419 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.12831C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Features</h3>
+            <ul>
+              <li><a href="#">Route Planning</a></li>
+              <li><a href="#">Weather Forecast</a></li>
+              <li><a href="#">Hotel Booking</a></li>
+              <li><a href="#">Trip Optimization</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">City Spotlights</a></li>
+              <li><a href="#">Travel Tips</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 TripWise - The Ultimate Trip Planning. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

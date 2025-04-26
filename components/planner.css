@@ -1,0 +1,58 @@
+/* Trip planner section styles */
+.planner {
+  padding: var(--spacing-6) 0;
+}
+
+.planner-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-4);
+}
+
+.planner-form {
+  background-color: var(--bg-primary);
+  padding: var(--spacing-4);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.add-stop {
+  margin-top: var(--spacing-1);
+}
+
+.map-preview {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  padding: var(--spacing-4);
+  text-align: center;
+  height: 100%;
+}
+
+.map-placeholder svg {
+  margin-bottom: var(--spacing-2);
+  opacity: 0.5;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .planner-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .map-preview {
+    height: 300px;
+    order: -1;
+  }
+}
